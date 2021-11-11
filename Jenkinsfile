@@ -8,6 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 mvn clean install
+                echo 'mvn done'
                 sh 'mvn package'
             }
         }
